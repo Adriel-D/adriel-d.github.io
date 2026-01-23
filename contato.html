@@ -28,6 +28,31 @@
             bottom: 0;
             width: 100%;
         }
+        .mensagem {
+            width: 100%;
+            max-width: 500px;
+            min-height: 120px;
+        
+            padding: 10px 12px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        
+            border: 1px solid #999;
+            border-radius: 5px;
+        
+            resize: vertical; /* permite aumentar só para baixo */
+            outline: none;
+            box-sizing: border-box;
+        }
+        
+        .mensagem:focus {
+            border-color: #000;
+            background-color: #f9f9f9;
+        }
+        mensagem::placeholder {
+            color: #777;
+        }
         </style>
 </head>
 <header>
@@ -51,6 +76,9 @@
         <input type="email" name="email" tabindex="3"
         id="email" placeholder="Digite seu e-mail..." autocomplete="off"
         required>
+        <br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea class="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
         <br>
         <input type="submit" value="Enviar">
         &nbsp;
