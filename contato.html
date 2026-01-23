@@ -53,6 +53,13 @@
         mensagem::placeholder {
             color: #777;
         }
+        .form {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 12px 16px;
+            max-width: 500px;
+        }
+
         </style>
 </head>
 <header>
@@ -61,7 +68,7 @@
 <body>
   <fieldset>
     <legend>Faça contato:</legend>
-    <form method="post" action="https://formspree.io/f/mbdgylgz">
+    <form class="form" method="post" action="https://formspree.io/f/mbdgylgz">
         <label for="nome"> Nome: </label>
         <input type="text" name="nome" tabindex="1"
         id="nome" placeholder="Digite seu nome..." autocomplete="off"
