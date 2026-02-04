@@ -29,12 +29,60 @@
             bottom: 0;
             width: 100%;
         }
+        .cards {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card {
+            background-color: #ffffff;
+            width: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+        
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+        
+        .card p {
+            font-size: 14px;
+            padding: 0 10px 10px;
+            color: #555;
+        }
+
         </style>
 </head>
 <header>
   <h1>Trabalhos</h1>
 </header>
 <body>
-  <a href="https://adriel-d.github.io/quiz.pokemon/">Pokémon API</a>
+    <div class="cards">
+        <a href="https://adriel-d.github.io/quiz.pokemon/">
+            <div class="card">
+                <img src="quizpokemon.jpg" alt="Quiz Pokémon">
+                <h3>Quiz de Pokémon*</h3>
+                <p>Esse projeto foi feito com o objetivo de ganhar experiência usando APIs, fiz durante meu curso de programação web no SENAI.
+                <br> Basicamente aparece a figura do pokémon e as alternativas, se for correto, ele vai somar um ponto e passar para o próximo, se errar, será anunciado e aparecerá um botão de próximo;
+                <br>* Esse projeto precisa de ajustes!</p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
